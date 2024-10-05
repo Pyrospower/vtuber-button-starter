@@ -39,14 +39,21 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+    --clr-accent: 240 4.8% 95.9%;
+    --clr-accent-foreground: 240 5.9% 10%;
     --clr-background: 0 0% 100%;
     --clr-foreground: 240 10% 3.9%;
     --clr-muted: 240 4.8% 95.9%;
     --clr-muted-foreground: 240 3.8% 46.1%;
     --clr-primary: 240 5.9% 10%;
     --clr-primary-foreground: 0 0% 98%;
+    --radius: 0.5rem;
 
     accent-color: hsl(var(--clr-primary));
+  }
+
+  :global(button, [role="button"]) {
+    cursor: pointer;
   }
 
   .box {

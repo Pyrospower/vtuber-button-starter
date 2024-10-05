@@ -68,21 +68,29 @@
     padding: 1rem;
     background-color: hsl(var(--clr-background));
     color: hsl(var(--clr-foreground));
-    &:not(:last-child) {
-      margin-bottom: 2rem;
-    }
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
   }
 
   h2 {
     font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 0.875rem;
   }
 
-  section > div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  section {
+    padding-block: 1rem;
+    & > div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
   }
 
   button {

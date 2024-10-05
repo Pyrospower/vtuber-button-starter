@@ -61,6 +61,9 @@
     padding: 1rem;
     background-color: hsl(var(--clr-background));
     color: hsl(var(--clr-foreground));
+    @media screen and (min-width: 768px) {
+      padding: 2rem;
+    }
   }
 
   h1 {

@@ -1,7 +1,7 @@
 <script lang="ts">
   import CategorySection from "$lib/components/CategorySection.svelte";
   import Footer from "$lib/components/Footer.svelte";
-  import Header from "$lib/components/Header.svelte";
+  import ModeToggle from "$lib/components/ModeToggle.svelte";
   import { ModeWatcher } from "mode-watcher";
   import { SITE } from "./site-config";
 
@@ -22,7 +22,7 @@
 
 <ModeWatcher />
 <div class="box">
-  <Header />
+  <ModeToggle />
   <main>
     <h1>{SITE.title}</h1>
     {#each categories as category}

@@ -2,6 +2,7 @@
   import CategorySection from "$lib/components/CategorySection.svelte";
   import Footer from "$lib/components/Footer.svelte";
   import Header from "$lib/components/Header.svelte";
+  import { ModeWatcher } from "mode-watcher";
   import { SITE } from "./site-config";
 
   let categories = ["Greeting", "General", "Catchphrases", "Laughing", "Cute"];
@@ -19,6 +20,7 @@
   <meta property="og:description" content={SITE.description} />
 </svelte:head>
 
+<ModeWatcher />
 <div class="box">
   <Header />
   <main>
@@ -50,6 +52,17 @@
     --radius: 0.5rem;
 
     accent-color: hsl(var(--clr-primary));
+  }
+
+  :global(.dark) {
+    --clr-accent: 240 3.7% 15.9%;
+    --clr-accent-foreground: 0 0% 98%;
+    --clr-background: 240 10% 3.9%;
+    --clr-foreground: 0 0% 98%;
+    --clr-muted: 240 3.7% 15.9%;
+    --clr-muted-foreground: 240 5% 64.9%;
+    --clr-primary: 0 0% 98%;
+    --clr-primary-foreground: 240 5.9% 10%;
   }
 
   :global(button, [role="button"]) {

@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "name": "Greeting",
+      "voiceList": [
+        {
+          "name": "Hello",
+          "path": "hello.mp3"
+        },
+        {
+          "name": "Good morning",
+          "path": "good_morning.mp3"
+        },
+        {
+          "name": "Good afternoon",
+          "path": "good_afternoon.mp3"
+        }
+      ]
+    },
+    {
+      "name": "Laugh",
+      "voiceList": [
+        {
+          "name": "Wheeze",
+          "path": "wheeze.mp3"
+        },
+        {
+          "name": "Giggle",
+          "path": "giggle.mp3"
+        }
+      ]
+    }
+  ]
+}

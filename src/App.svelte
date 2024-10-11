@@ -5,7 +5,9 @@
   import { ModeWatcher } from "mode-watcher";
   import { SITE } from "./site-config";
 
-  let categories = ["Greeting", "General", "Catchphrases", "Laughing", "Cute"];
+  import voices from "./assets/voices.json";
+
+  const { categories } = voices;
 </script>
 
 <svelte:head>

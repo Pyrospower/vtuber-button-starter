@@ -1,14 +1,26 @@
 <script lang="ts">
-  export let category = "";
+  export let category: {
+    name: string;
+    voiceList: { name: string; path: string }[];
+  };
+
+  const playSound = (path: string) => () => {
+    const audio = new Audio(path);
+    audio
+      .play()
+      .catch((e) => console.error(`Failed to play audio: ${path}`, e));
+  };
 </script>
 
 <section>
-  <h2>{category}</h2>
+  <h2>{category.name}</h2>
   <div>
-    {#each Array(5) as _, i}
-      <button on:click={() => console.log("Playing sound")}>
-        {category}
-        {i + 1}
+    {#each category.voiceList as voice}
+      <button
+        aria-label={`Play ${voice.name}`}
+        on:click={playSound(`/voices/${category.name}/${voice.path}`)}
+      >
+        {voice.name}
       </button>
     {/each}
   </div>

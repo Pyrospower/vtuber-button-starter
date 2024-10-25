@@ -1,8 +1,12 @@
 <script lang="ts">
-  export let category: {
-    name: string;
-    voiceList: { name: string; path: string }[];
-  };
+  interface Props {
+    category: {
+      name: string;
+      voiceList: { name: string; path: string }[];
+    };
+  }
+
+  let { category }: Props = $props();
 
   const playSound = (path: string) => () => {
     const audio = new Audio(path);
@@ -18,7 +22,7 @@
     {#each category.voiceList as voice}
       <button
         aria-label={`Play ${voice.name}`}
-        on:click={playSound(`/voices/${category.name}/${voice.path}`)}
+        onclick={playSound(`/voices/${category.name}/${voice.path}`)}
       >
         {voice.name}
       </button>

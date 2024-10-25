@@ -3,7 +3,7 @@
 </script>
 
 <div class="btn-wrapper">
-  <button class="mode-toggle" on:click={toggleMode}>
+  <button class="mode-toggle" onclick={toggleMode}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"

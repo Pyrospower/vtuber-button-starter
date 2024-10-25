@@ -4,7 +4,7 @@ This is a template project designed to help developers quickly create a customiz
 
 ## Table of Contents
 
-- [How to use this template](How-to-use-this-template)
+- [How to use this template](#How-to-use-this-template)
   - [Create a repository from the template](#create-a-repository-from-the-template)
   - [Clone locally](#clone-locally)
   - [Modify the configuration](#modify-the-configuration)

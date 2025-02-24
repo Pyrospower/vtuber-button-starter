@@ -32,5 +32,10 @@
   },
   "dependencies": {
     "mode-watcher": "^0.4.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }

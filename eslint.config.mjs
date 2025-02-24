@@ -8,7 +8,7 @@ import svelteConfig from "./svelte.config.js";
 /**
  * @type {import('eslint').Linter.Config[]}
  */
-export default [
+export default tseslint.config(
   js.configs.recommended,
   ...tseslint.configs.recommended,
   ...eslintPluginSvelte.configs["flat/recommended"],
@@ -40,4 +40,4 @@ export default [
     },
   },
   { ignores: ["**/build/**", "**/dist/**"] },
-];
+);
